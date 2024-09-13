@@ -6,6 +6,150 @@ Text Heading: black
 Text Regular: #7e7e7e
 Schriftgröße: 1rem
 Standard Abstand: 1rem
+
 Radius außen: 1.5rem
 Radius innen: 0.5rem
 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  margin: auto 0;
+}
+
+html {
+  font-size: 1rem;
+  font-family: Quicksand;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  /* padding: 2rem; */
+  margin: 1rem;
+  border-radius: 1.5rem;
+  background-color: #fff;
+  padding-bottom: 1rem;
+  /* width: 20rem; */
+  /* border: 2px solid red; */
+}
+
+img {
+  position: relative;
+  max-width: 100%;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+button {
+  background-color: #485fb9;
+  padding-block: 0.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  justify-content: center;
+  border: none;
+}
+
+aside {
+  background-color: #f5f5f5;
+  position: absolute;
+  top: 3%;
+  left: 20%;
+  padding: 0.2rem;
+  opacity: 0.6;
+  border-radius: 0.5rem;
+}
+
+aside p {
+  margin: 0;
+}
+
+.info-half {
+  display: grid;
+  grid-template-columns: 1rem 1fr 1rem;
+  /* grid-template-rows: 1fr 1fr; */
+}
+
+.description {
+  padding-block: 1rem;
+  border-radius: 3rem;
+  /* display: grid;
+  grid-template-columns: 1rem 1fr 1fr 1rem; */
+  background-color: #fff;
+  grid-column: 2 / -2;
+}
+.description p {
+  margin: 0;
+  color: #7e7e7e;
+}
+
+h1 {
+  margin: 0rem;
+  padding-bottom: 0.5rem;
+}
+
+.numbers {
+  background-color: #f5f5f5;
+  padding: 0.5rem;
+  padding-bottom: 0.5rem;
+  grid-column: 2 / -2;
+  display: flex;
+  flex-direction: column;
+  color: #7e7e7e;
+  border-radius: 0.5rem;
+}
+
+.price {
+  align-self: center;
+  grid-column: 1 / -1;
+  background-color: #fff;
+  color: black;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding-block: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.price-container {
+}
+
+.size-quantity {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+select {
+  width: 3rem;
+  border: transparent;
+  /* padding-inline: 0.5rem; */
+  border-radius: 0.5rem;
+  color: #7e7e7e;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  justify-content: flex-start;
+}
+
+input {
+  all: unset;
+  position: absolute;
+}
+.circle {
+  background-color: black;
+  background: linear-gradient(0.25turn, red 50%, white 50%);
+  border: 1px solid lightgray;
+  width: 1.3rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
